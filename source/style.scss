@@ -16,3 +16,16 @@ a:hover{text-decoration: none;}
 ul li {list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: inherit;}
+// Переменые для адаптива
+$minwidth:320px;
+$mw:1100;
+$md:$mw+12;
+$md2:992.98;
+$md3:767.98;
+$md4:479.98;
+//Адаптив + сетка
+.container{max-width: $mw+px;margin: 0 auto; width: 100%;
+@media (max-width:$md1+px){max-width:970px;}
+@media (max-width:$md2+px){max-width:750px;}
+@media (max-width:$md2+px){max-width:none; padding:0 10px;}
+}
